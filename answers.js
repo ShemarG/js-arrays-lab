@@ -26,15 +26,23 @@ function arrayPlusArray(arr1, arr2) {
 function abbrevName(string) {
   //Write your code here
   let arr = (string.replace(" ", ".")).split("")
-  console.log(arr)
   let output = ''
   arr.forEach(item => item === item.toUpperCase() ? output += `${item}` : null)
   return output
 }
 
 // Question 5
-function makeTitle() {
+function makeTitle(str) {
   // Write your code here
+  let cap = str.split(" ")
+  let strs = []
+  cap.forEach(element => {
+      let letters = element.split("")
+      letters[0] = letters[0].toUpperCase()
+      let m = letters.join("")
+      strs.push(m) 
+   })
+  return strs.join(" ") 
 }
 
 // Question 6
