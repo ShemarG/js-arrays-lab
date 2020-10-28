@@ -9,8 +9,9 @@ function average(array) {
 }
 
 // Question 2
-function combineArrays() {
+function combineArrays(arr1, arr2) {
   // Write your code here
+  return arr1.concat(arr2)
 }
 
 // Question 3
