@@ -46,8 +46,13 @@ function makeTitle(str) {
 }
 
 // Question 6
-function gimme() {
+function gimme(arr) {
   // Write your code here
+  let largest = Math.max(...arr)
+  let smallest = Math.min(...arr)
+  let foundMiddle = arr.filter(item => (item !== largest && item !== smallest)) 
+  let [middle] = foundMiddle
+  return arr.indexOf(middle)
 }
 
 // Do NOT touch or write anything below this line
