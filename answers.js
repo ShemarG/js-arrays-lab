@@ -15,8 +15,11 @@ function combineArrays(arr1, arr2) {
 }
 
 // Question 3
-function arrayPlusArray() {
+function arrayPlusArray(arr1, arr2) {
   // Write your code here
+ const reducer = (accumulator, currentValue) => accumulator + currentValue;
+ let x = arr1.concat(arr2)
+ return x.reduce(reducer)
 }
 
 // Question 4
